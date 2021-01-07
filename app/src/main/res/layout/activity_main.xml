@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_marginTop="5dp"
+        android:id="@+id/welcomeMsg"
+        android:textStyle="italic"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textColor="#00BFA5"
+        android:text="Hello! I am Bot. How may I help you ?"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </TextView>
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_below="@+id/welcomeMsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:textColor="#00BFA5"
+            android:id="@+id/messageBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/welcomeMsg"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/background"
+            android:gravity="center"
+            android:hint="Say/Type something"
+            android:textColorHint="#00BFA5"></EditText>
+
+        <ImageButton
+            android:id="@+id/micBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:background="#000"
+            android:src="@drawable/ic_baseline_mic_24"
+            android:tint="#00BFA5"></ImageButton>
+    </LinearLayout>
+    <TextView
+        android:text="1) Type something in the  Box \n OR \n Speak something in the mic \n 2) Finally press confirm Button"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/linearLayout"
+        android:gravity="center"
+        android:id="@+id/helpTV"
+        android:textColor="#FF0000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </TextView>
+
+    <Button
+        android:id="@+id/confirmBtn"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#00BFA5"
+        android:layout_alignParentBottom="true"
+        android:textSize="20sp"
+        android:text="Confirm"
+        android:background="@drawable/background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </Button>
+
+</RelativeLayout>
